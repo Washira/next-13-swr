@@ -46,3 +46,8 @@ Selection for installation just like this
 ✔ Would you like to customize the default import alias? … No / -Yes-
 ✔ What import alias would you like configured? … -@-/*
 ```
+
+## How to use
+
+Using `use` function for handling the promise fetching data instead of `useState` and `useEffect`, See more (reference)[https://nextjs.org/docs/app/building-your-application/data-fetching/fetching#use-in-client-components].
+

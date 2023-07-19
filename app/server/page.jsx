@@ -1,9 +1,25 @@
-import React from 'react'
+import { use } from 'react'
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
+//getServerSideProps in Next13
+
+async function getCharacters() {
+	return await (await fetch("https://rickandmortyapi.com/api/character", { cache: "no-store" })).json();
 }
 
-export default page
+const ServerPage = () => {
+  const characters = use(getCharacters());
+	return (
+		<div>
+			<h2>Server Fetching (getServerSideProps)</h2>
+			{characters?.results?.map((c) => {
+				return (
+					<ul key={c.id}>
+						<li>{c.name}</li>
+					</ul>
+				)
+			})}
+		</div>
+	)
+}
+
+export default ServerPage

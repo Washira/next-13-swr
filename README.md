@@ -38,11 +38,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Selection for installation just like this
 
 ```
-✔ Would you like to use TypeScript? … <u>No</u> / Yes
-✔ Would you like to use ESLint? … No / <u>Yes</u>
-✔ Would you like to use Tailwind CSS? … <u>No</u> / Yes
-✔ Would you like to use `src/` directory? … <u>No</u> / Yes
-✔ Would you like to use App Router? (recommended) … <u>No</u> / Yes
-✔ Would you like to customize the default import alias? … No / <u>Yes</u>
-✔ What import alias would you like configured? … <u>@</u>/*
+✔ Would you like to use TypeScript? … <u> No </u> / Yes
+✔ Would you like to use ESLint? … No / <u> Yes </u>
+✔ Would you like to use Tailwind CSS? … <u> No </u> / Yes
+✔ Would you like to use `src/` directory? … <u> No </u> / Yes
+✔ Would you like to use App Router? (recommended) … <u> No </u> / Yes
+✔ Would you like to customize the default import alias? … No / <u> Yes </u>
+✔ What import alias would you like configured? … <u> @ </u>/*
 ```

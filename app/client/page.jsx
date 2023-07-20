@@ -1,26 +1,26 @@
-'use client'
+'use client';
 
-import useSWR from "swr"
-import Link from "next/link"
+import useSWR from "swr";
+import Link from "next/link";
 
-const fetcher = (path) => fetch(`https://rickandmortyapi.com/${path}`).then(res => res.json())
+const fetcher = (path) => fetch(`https://rickandmortyapi.com/${path}`).then(res => res.json());
 
 const ClientPage = () => {
-  const characters = useSWR("api/character", fetcher)
+  const characters = useSWR("api/character", fetcher);
   return (
-		<div>
-			<h2>Client Fetching</h2>
-			{characters?.data?.results?.map(c =>
-				<ul key={c.id}>
-					<Link href={`/staticprops/${c.name}`}>
-						<li>
-							{c.name}
-						</li>
-					</Link>
-				</ul>
-			)}
-		</div>
-	)
-}
+    <div>
+      <h2>Client Fetching</h2>
+      {characters?.data?.results?.map(c =>
+        <ul key={c.id}>
+          <Link href={`/staticprops/${c.name}`}>
+            <li>
+              {c.name}
+            </li>
+          </Link>
+        </ul>
+      )}
+    </div>
+  );
+};
 
-export default ClientPage
+export default ClientPage;
